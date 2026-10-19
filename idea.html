@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تفاصيل الفكرة — تخرّج</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <span class="cap"><svg viewBox="0 0 24 24"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zm-7 9.18v4L12 20l7-3.82v-4L12 16l-7-3.82z"/></svg></span>
+      <span>تخـ<b>رّج</b></span>
+    </a>
+    <nav class="main-nav">
+      <a href="index.html">الرئيسية</a>
+      <a href="ideas.html" class="active">بنك الأفكار</a>
+      <a href="ideas.html?tier=bachelor">بكالوريوس</a>
+      <a href="ideas.html?tier=master">ماستر</a>
+      <a href="blog.html">المدونة</a>
+    </nav>
+    <a href="#consult" class="btn btn-gold header-cta">استشارة مجانية</a>
+    <button class="nav-toggle" aria-label="القائمة">☰</button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <p style="margin-bottom:0"><a href="ideas.html" style="color:var(--gold);font-weight:700">بنك الأفكار</a> / تفاصيل الفكرة</p>
+  </div>
+</section>
+
+<div class="container" id="idea-holder">
+  <div class="idea-detail">
+    <div class="card">
+      <div class="meta" id="idea-meta"></div>
+      <h1 id="idea-title"></h1>
+
+      <h3 class="section-title">ملخص الفكرة</h3>
+      <p class="body-text" id="idea-summary"></p>
+
+      <h3 class="section-title">أبرز الوظائف المقترحة</h3>
+      <ul class="features">
+        <li>لوحة تحكم رئيسية بواجهة عربية سهلة الاستخدام</li>
+        <li>إدارة المستخدمين والصلاحيات حسب الأدوار</li>
+        <li>تقارير ورسوم بيانية تفاعلية قابلة للتصدير</li>
+        <li>إشعارات وتنبيهات فورية</li>
+        <li>توثيق كامل للمشروع يساعدك في كتابة الفصول النظرية</li>
+      </ul>
+
+      <h3 class="section-title">التقنيات المقترحة</h3>
+      <div class="tech-tags">
+        <span>Python</span><span>Laravel / PHP</span><span>MySQL</span>
+        <span>Flutter</span><span>Vue.js</span><span>TensorFlow</span>
+      </div>
+
+      <p class="form-note" style="color:var(--muted);margin-top:24px">* الوظائف والتقنيات أعلاه عيّنة توضيحية للتصميم — كل فكرة في البنك الفعلي سيكون لها تفاصيلها الخاصة.</p>
+    </div>
+
+    <div class="consult-box" id="consult">
+      <h3>💬 أعجبتك هذه الفكرة؟ احصل على استشارة مجانية</h3>
+      <p>اترك بياناتك وسيتواصل معك فريقنا لمناقشة الفكرة، متطلباتها، وخطة تنفيذها — بدون أي التزام.</p>
+      <form class="consult-form" id="consult-form">
+        <input type="text" placeholder="الاسم الكامل" required>
+        <input type="tel" placeholder="رقم الجوال / واتساب" required>
+        <input type="text" placeholder="الجامعة والتخصص" class="full">
+        <textarea id="consult-message" class="full" placeholder="رسالتك..."></textarea>
+        <button type="submit" class="btn btn-gold full" style="padding:14px">أرسل طلب الاستشارة المجانية</button>
+      </form>
+      <p class="form-note">🔒 بياناتك محفوظة ولن تُشارك مع أي طرف ثالث.</p>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="bottom">© 2026 منصة تخرّج — جميع الحقوق محفوظة</div>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
